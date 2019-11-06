@@ -1,7 +1,9 @@
 #!/bin/sh
 set -e
 
-sudo groupadd docker
+if [ ! $(getent group docker) ]; then
+  sudo groupadd docker
+fi
 
 sudo usermod -aG docker $USER
 
