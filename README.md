@@ -2,7 +2,7 @@
 ## Clone repo
 
 ```
-git@github.com:dev4mobile/ToolsKit.git
+https://github.com/dev4mobile/ToolsKit.git
 ```
 ## run
 ```
