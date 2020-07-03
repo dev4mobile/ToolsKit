@@ -4,6 +4,12 @@ set -e
 
 project_name=$1
 
+if [ -z "${project_name}" ]; then
+  echo "no argument supplied"
+  exit 1
+fi
+
+
 if [ ! -d "${project_name}" ]; then
   echo "${project_name} not exist."
   mkdir "$project_name"
